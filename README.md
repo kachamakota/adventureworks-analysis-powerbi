@@ -1,14 +1,18 @@
 # AdventureWorks Sales Analysis
 
+
+## Tools Used
+- Microsoft PowerBI
+- 
 ## Overview
-This project contains a sales analysis of the AdventureWorks dataset created in Microsoft PowerBI.
+This project contains an ecommerce data analysis of the AdventureWorks dataset created in Microsoft PowerBI.
 
 The analysis focuses on:
 - sales performance across years and countries,
 - customer segmentation,
 - product-level performance insights.
 
-The report covers data from 2020–2022 and uses interactive dashboards, slicers, DAX measures, and calculated metrics.
+The report covers data from 2020–2022 and uses interactive dashboards, slicers, measures and calculated columns.
 
 ---
 
@@ -36,7 +40,7 @@ Customer-focused analysis including:
   - income level,
   - parent/non-parent status,
   - country
-- New vs returning customer comparison
+- New vs returning customer ratios
 
 ---
 
@@ -55,7 +59,3 @@ Product performance analysis including:
 
 ---
 
-## Tools Used
-- Microsoft PowerBI
-- DAX
-- Interactive dashboards and visualizations
