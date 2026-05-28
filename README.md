@@ -9,7 +9,7 @@ The main focus of the project was to create an interactive dashboard design, whi
 ```text
 powerbi-adventureworks-analysis/
 ├── README.md
-├── Adventure_Works_Dashboard.pbix
+├── AdventureWorks_dashboard.pbix
 ├── dataset/
 │   └── Sales Data/
 └── screenshots/
