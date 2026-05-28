@@ -6,15 +6,14 @@ The main focus of the project was to create an interactive dashboard design, whi
 
 ## PROJECT STRUCTURE
 
+```text
+powerbi-adventureworks-analysis/
 ├── README.md
 ├── Adventure_Works_Dashboard.pbix
 ├── dataset/
-│   ├── Sales Data
-├── screenshots/
-│   ├── data_model.png
-│   ├── general_dashboard.png
-│   ├── customer_dashboard.png
-│   └── product_dashboard.png
+│   └── Sales Data/
+└── screenshots/
+```
 
 ## Project Overview
 
@@ -224,13 +223,17 @@ CALCULATE(
     [Total_Sales],
     DATESYTD(Dim_Calendar[Date])
 )
+```
 
+```DAX
 YTD_Quantity =
 CALCULATE(
     [Total_Quantity],
     DATESYTD(Dim_Calendar[Date])
 )
+```
 
+```DAX
 YTD_Profit =
 CALCULATE(
     [Total_Profit],
@@ -245,10 +248,9 @@ This approach allowed the same visuals to display different metrics depending on
 
 The Power BI report contains three main dashboard pages:
 
-**  - General Dashboard
-    - Customer Dashboard
-    - Product Dashboard
-    **
+- **General Dashboard**
+- **Customer Dashboard**
+- **Product Dashboard**
 
 ### Dashboard page 1 - General Dashboard
 
@@ -325,6 +327,7 @@ CALCULATE(
 )
 ```
 This measure was then used to calculate <ins>new customers</ins> in the selected period.
+
 ```DAX
 New_Customers =
 CALCULATE(
@@ -339,16 +342,21 @@ This allowed the report to compare new and returning customer behavior over time
 
 ### Dashboard page 3 - Product Dashboard
 
-The Product Dashboard focuses on product performance and product-level profitability.
+The Product Dashboard focuses on product performance, product-level profitability and return rates.
 
 It includes:
 
 - top 10 products by revenue
 - scatter plot analysis of top 25 high-revenue products, showing return rates % and profit margin %
-- monthly quantity sold by product category
+- bar chart with monthly quantity sold by product category, and a line chart with previous year comparison
 - average order value analysis
 - KPI cards for selected product insights such as return rates or highest profit margin category
-- Product Performance Visuals
+
+This page also includes a year slicer, allowing the user to analyze product performance overall, or for a selected year only.
+
+The purpose of this page was to identify which products and product groups generated revenue, while also checking whether high-performing products had potential issues with returns or profit margin.
+
+The scatter plot was used to analyze whether high-revenue products were also profitable and whether they had relatively high or low return rates. This made it possible to look beyond revenue alone and compare products from both profitability and product quality/customer satisfaction perspectives.
 
   
 
