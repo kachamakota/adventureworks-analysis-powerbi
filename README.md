@@ -111,7 +111,8 @@ CALENDAR(
 
 Several calculated columns were created to support customer segmentation and behavioral analysis.
 
-Income Band
+
+**Income Band**
 
 The IncomeBand column groups customers into income segments. This was later used in the Customer Dashboard to analyze customer distribution and performance by income level.
 
@@ -125,7 +126,8 @@ SWITCH(
     "4) Very High"
 )
 ```
-Parent / Non-Parent Flag
+
+**Parent / Non-Parent Flag**
 
 The IsParent column identifies whether a customer has children. This was used as another segmentation dimension in the customer analysis.
 
@@ -138,7 +140,7 @@ IF(
 )
 ```
 
-One-Time Customer Flag
+**One-Time Customer Flag**
 
 The One_Time_Customer_Flag column was created to identify customers with only one lifetime order.
 
