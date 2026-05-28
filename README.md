@@ -187,17 +187,17 @@ Using a dedicated measures table made the report easier to maintain and helped k
 
 ## Dynamic KPI Switching
 
-One of the main features of the report is a dynamic KPI switch that allows the user to switch between different business metrics within the same visuals.
+One of the main features of the report is a <ins>dynamic KPI switch</ins> that allows the user to switch between different business metrics within the same visuals.
 
-The available KPI options are:
+**The available KPI options are:**
 
-Sales / Revenue
-Quantity Sold
-Profit
+- Sales / Revenue (USD)
+- Quantity Sold (units)
+- Profit (USD)
 
 To support this functionality, a disconnected table called slc_values was created. This table contains the metric names used in the KPI slicer.
 
-The selected value from this slicer is then used inside DAX measures to dynamically return the correct metric.
+The selected value from this slicer is then used inside DAX measures <ins>to dynamically return the metric</ins>.
 
 Example:
 
@@ -241,7 +241,8 @@ CALCULATE(
 )
 ```
 
-This approach allowed the same visuals to display different metrics depending on the user’s selection. It reduced the need to create separate visuals for each KPI and made the dashboard more interactive and flexible.
+This approach allowed the same visuals to <ins>display different metrics</ins> depending on the user’s selection. 
+It reduced the need to create separate visuals for each KPI and made the dashboard more interactive and also compact.
 
 
 ## Report Pages
@@ -273,7 +274,7 @@ The dashboard includes cards and visuals showing:
   - difference between current year and previous year
   - percentage difference between current year and previous year
 
-These calculations react dynamically to the selected KPI and selected year.
+These calculations react dynamically to the selected year and, s described previously, the selected KPI.
 
 #### Visuals
 
