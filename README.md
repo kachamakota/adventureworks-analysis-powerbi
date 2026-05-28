@@ -245,9 +245,10 @@ This approach allowed the same visuals to display different metrics depending on
 
 The Power BI report contains three main dashboard pages:
 
-### General Dashboard
-### Customer Dashboard
-### Product Dashboard
+**  - General Dashboard
+    - Customer Dashboard
+    - Product Dashboard
+    **
 
 ### Dashboard page 1 - General Dashboard
 
